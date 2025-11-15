@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>DRGcore – Universal Bypass</title>
+  <meta name="author" content="HieuDRG"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect fill='%2300ff41' width='64' height='64'/><text x='32' y='38' text-anchor='middle' fill='%230a0a0a' font-family='monospace' font-size='24' font-weight='700'>DRG</text></svg>">
+  <style>
+    :root{--bg:#0a0a0a;--neon:#00ff41;--pulse:#ff0044}
+    body{background:var(--bg);color:var(--neon);font-family:'Courier New',monospace;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;margin:0}
+    h1{font-size:2.4em;text-shadow:0 0 9px var(--neon)}
+    input,button{padding:10px 15px;font-size:1em;border:1px solid var(--neon);background:transparent;color:var(--neon);border-radius:4px;margin:5px}
+    button:hover{background:var(--neon);color:var(--bg);cursor:pointer}
+    #out{margin-top:15px;max-width:600px;word-break:break-all;color:var(--pulse)}
+  </style>
+</head>
+<body>
+  <h1>DRGcore – Universal Bypass</h1>
+  <input id="url" placeholder="Nhập link rút gọn hoặc key nhập">
+  <button onclick="bypass()">BYPASS</button>
+  <div id="out"></div>
+
+  <script src="bypass.js"></script>
+</body>
+</html>
